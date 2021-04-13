@@ -72,3 +72,8 @@ class Dataset():
         val_ds = val_ds.map(self.get_img_label, num_parallel_calls=self.AUTOTUNE)
         val_ds = self.preprocess_ds(val_ds)
         return val_ds
+    
+    
+    
+    
+    
