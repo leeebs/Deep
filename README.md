@@ -1,4 +1,4 @@
-# Deep
+# Deep - image classification
 
 ### CNN
 
