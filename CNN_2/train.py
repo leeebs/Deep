@@ -24,7 +24,6 @@ if __name__ == '__main__':
     model = MyModel()
     
     loss_object = tf.keras.losses.SparseCategoricalCrossentropy()
-    #optimizer = tf.keras.optimizers.RMSprop(learning_rate=0.001)
     optimizer = tf.keras.optimizers.Adam(learning_rate=0.001)
     
     train_loss = tf.keras.metrics.Mean(name='train_loss')
@@ -40,9 +39,6 @@ if __name__ == '__main__':
             
         gradients = tape.gradient(loss, model.trainable_variables)
         optimizer.apply_gradients(grads_and_vars=zip(gradients, model.trainable_variables))
-        
-        #gradients = tape.gradient(loss, model.trainable_variables)
-        #optimizer.apply_gradients(zip(gradients, model.trainable_variables))
         
         train_loss.update_state(values=loss)
         train_accuracy.update_state(y_true=label_batch, y_pred=predictions)
