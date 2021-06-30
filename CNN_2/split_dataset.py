@@ -36,7 +36,7 @@ class SplitDataset():
         for item in os.listdir(self.dataset_dir):
             item_path = os.path.join(self.dataset_dir, item)
             if os.path.isdir(item_path):
-                label_names.append(item)
+                label_names.append(item) 
         return label_names
         
     def get_all_file_path(self):
