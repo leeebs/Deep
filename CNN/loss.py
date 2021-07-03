@@ -6,5 +6,5 @@ from tensorflow import keras
 
 def loss_fn(label, logits):
     loss = tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True)
-    loss = loss(label, logits)
+    loss = loss(label, logits)  
     return loss
