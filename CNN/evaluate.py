@@ -13,7 +13,7 @@ class Test():
         self.test_loss = tf.keras.metrics.Mean()
         self.test_accuracy = tf.keras.metrics.SparseCategoricalAccuracy()
         self.test_loss_results = []
-        self.test_accuracy_results = []
+        self.test_accuracy_results = []  
         
     @tf.function
     def test_step(self, img, label):
