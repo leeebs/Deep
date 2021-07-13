@@ -15,10 +15,10 @@ class Test():
         self.test_loss_results = []
         self.test_accuracy_results = []  
         
-    @tf.function
+    @tf.function 
     def test_step(self, img, label):
         logits = self.model(img, training=False)
-        loss = loss_fn(label, logits)
+        loss = loss_fn(label, logits) 
         
         self.test_loss(loss)
         self.test_accuracy(label, logits)
