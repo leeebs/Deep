@@ -22,8 +22,8 @@ class MyModel(tf.keras.Model):
     
     def call(self, inputs, training=False):
         net = self.conv1(inputs)
-        net = self.bat1(net)
-        net = tf.nn.relu(net)
+        net = self.bat1(net) 
+        net = tf.nn.relu(net) 
         net = self.pool1(net)
         net = self.conv2(net)
         net = self.bat2(net)
