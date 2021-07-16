@@ -46,9 +46,9 @@ def generate_datasets():
     valid_count = get_the_length_of_dataset(valid_dataset)
     test_count = get_the_length_of_dataset(test_dataset)
     
-    train_dataset = train_dataset.shuffle(train_count)
+    train_dataset = train_dataset.shuffle(train_count) 
     train_dataset = train_dataset.batch(batch_size=BATCH_SIZE)
-    train_dataset = train_dataset.prefetch(buffer_size=AUTOTUNE)
+    train_dataset = train_dataset.prefetch(buffer_size=AUTOTUNE) 
     valid_dataset = valid_dataset.batch(batch_size=BATCH_SIZE)
     test_dataset = test_dataset.batch(batch_size= BATCH_SIZE)
     
