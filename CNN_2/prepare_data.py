@@ -12,7 +12,7 @@ def load_and_preprocess_image(image_raw, data_augmentation=False):
     if data_augmentation:
         #image = tf.image.resize(image_tensor, [IMAGE_HEIGHT, IMAGE_WIDTH])
         image = tf.image.random_flip_left_right(image=image_tensor)
-        image = tf.image.resize_with_crop_or_pad(image=image_tensor,
+        image = tf.image.resize_with_crop_or_pad(image=image_tensor, 
                                                  target_height=int(IMAGE_HEIGHT*1.2),
                                                  target_width=int(IMAGE_WIDTH * 1.2))
         image = tf.image.random_crop(value=image, size=[IMAGE_HEIGHT, IMAGE_WIDTH, CHANNELS])
