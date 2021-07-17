@@ -12,5 +12,5 @@ def parse_image_function(example_proto):
 def get_parsed_dataset(tfrecord_name):
     raw_dataset = tf.data.TFRecordDataset(tfrecord_name)
     parsed_dataset = raw_dataset.map(parse_image_function)
-    return parsed_dataset
+    return parsed_dataset 
     
