@@ -38,7 +38,7 @@ class MyModel(tf.keras.Model):
         net = self.bat3(net)
         net = tf.nn.relu(net)
         net = self.pool3(net)
-        net = self.flatten(net) 
+        net = self.flatten(net)  
         net = self.dense1(net)
         #net = self.drop1(net)
         net = self.dense2(net)
