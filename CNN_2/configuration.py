@@ -11,7 +11,7 @@ test_image_dir = ""
 
 dataset_dir = "tfrecord\\dataset\\"
 train_dir = dataset_dir + "train"
-valid_dir = dataset_dir + "valid"
+valid_dir = dataset_dir + "valid" 
 test_dir = dataset_dir + "test" 
 train_tfrecord = dataset_dir + "train.tfrecord"
 valid_tfrecord = dataset_dir + "valid.tfrecord"
