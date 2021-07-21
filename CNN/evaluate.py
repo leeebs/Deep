@@ -12,7 +12,7 @@ class Test():
         self.model = tf.saved_model.load(self.save_path)
         self.test_loss = tf.keras.metrics.Mean()
         self.test_accuracy = tf.keras.metrics.SparseCategoricalAccuracy()
-        self.test_loss_results = []
+        self.test_loss_results = [] 
         self.test_accuracy_results = []  
         
     @tf.function 
