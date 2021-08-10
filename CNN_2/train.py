@@ -5,7 +5,7 @@ from model import MyModel
 import math
 
 def process_features(features, data_augmentation):
-    image_raw = features['image_raw'].numpy()
+    image_raw = features['image_raw'].numpy() 
     image_tensor_list = []
     for image in image_raw:
         image_tensor = load_and_preprocess_image(image, data_augmentation=data_augmentation)
