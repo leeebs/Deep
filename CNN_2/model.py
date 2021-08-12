@@ -41,5 +41,5 @@ class MyModel(tf.keras.Model):
         net = self.flatten(net)  
         net = self.dense1(net)
         #net = self.drop1(net)
-        net = self.dense2(net)
+        net = self.dense2(net) 
         return net
