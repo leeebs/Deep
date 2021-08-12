@@ -14,7 +14,7 @@ class MyModel(tf.keras.Model):
         #self.conv2 = keras.layers.Conv2D(32, 3, padding='same', activation='relu')
         self.conv2 = keras.layers.Conv2D(64, 3, padding='same', activation='relu')
         self.bat2 = keras.layers.BatchNormalization()
-        self.pool2 = keras.layers.MaxPooling2D()
+        self.pool2 = keras.layers.MaxPooling2D()  
         #self.conv3 = keras.layers.Conv2D(64, 3, padding='same', activation='relu') 
         self.conv3 = keras.layers.Conv2D(128, 3, padding='same', activation='relu')
         self.bat3 = keras.layers.BatchNormalization()
