@@ -7,7 +7,7 @@ from configuration import TRAIN_SET_RATIO, TEST_SET_RATIO
 class SplitDataset():
     def __init__(self, dataset_dir, saved_dataset_dir, train_ratio=TRAIN_SET_RATIO, test_ratio=TEST_SET_RATIO, show_progress=False):
         self.dataset_dir = dataset_dir
-        self.saved_dataset_dir = saved_dataset_dir
+        self.saved_dataset_dir = saved_dataset_dir 
         self.saved_train_dir = saved_dataset_dir + '\\train\\'
         self.saved_valid_dir = saved_dataset_dir + '\\valid\\'
         self.saved_test_dir = saved_dataset_dir + '\\test\\'  
