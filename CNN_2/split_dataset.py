@@ -10,7 +10,7 @@ class SplitDataset():
         self.saved_dataset_dir = saved_dataset_dir
         self.saved_train_dir = saved_dataset_dir + '\\train\\'
         self.saved_valid_dir = saved_dataset_dir + '\\valid\\'
-        self.saved_test_dir = saved_dataset_dir + '\\test\\' 
+        self.saved_test_dir = saved_dataset_dir + '\\test\\'  
 
         self.train_ratio = train_ratio
         self.test_ratio = test_ratio 
@@ -85,7 +85,7 @@ class SplitDataset():
         self.copy_files(type_path=self.test_file_path, type_saved_dir = self.saved_test_dir)
         
 if __name__ == "__main__":
-    split_dataset = SplitDataset(dataset_dir="tfrecord\\original_dataset",
+    split_dataset = SplitDataset(dataset_dir="tfrecord\\original_dataset", 
                                 saved_dataset_dir="tfrecord\\dataset",
                                 show_progress=True)
     split_dataset.start_splitting()
